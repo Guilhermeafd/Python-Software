@@ -7,21 +7,20 @@ import ConversorDeMoedas
 import ConversorDeTemperatura
 import RadarEletronico
 import ParImpar
+import Contabilidade
 
 print("Inicializando...")
-#sleep(5)
+sleep(5)
 
-print("Olá, sou seu novo smarthphone")
+print("\033[34mOlá! Sou seu novo smarthphone!\033[m")
 print("Vamos começar!")
 
 Nome = str(input("Como devo te chamar? ")).strip()
-Idade = str(input("Qual a sua idade? "))
-Cidade = str(input("Qual a sua cidade? ")).strip()
 
 print("Seja Bem Vindo(a) {}!".format(Nome.title()))
 
 print("Posso te ajudar nas seguintes funções:")
-print("1- Conversor de Moedas \n2- Media \n3- Conversor de Temperatura \n4- Radar Eletrônico \n5- Par ou Impar")
+print("1- Conversor de Moedas \n2- Media \n3- Conversor de Temperatura \n4- Radar Eletrônico \n5- Par ou Impar \n6- Contabilidade")
 Codigo = int(input("Como posso te ajudar? "))
 
 if Codigo == 1:
@@ -38,3 +37,7 @@ if Codigo == 4:
 
 if Codigo == 5:
     ParImpar.ParImpar()
+
+if Codigo == 6:
+    Contabilidade.Contabilidade()
+
