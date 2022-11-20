@@ -15,8 +15,8 @@ print("Olá, sou seu novo smarthphone")
 print("Vamos começar!")
 
 Nome = str(input("Como devo te chamar? ")).strip()
-#Idade = str(input("Qual a sua data de nascimento? "))
-#Cidade = str(input("Qual a sua cidade? ")).strip()
+Idade = str(input("Qual a sua idade? "))
+Cidade = str(input("Qual a sua cidade? ")).strip()
 
 print("Seja Bem Vindo(a) {}!".format(Nome.title()))
 
